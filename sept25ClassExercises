@@ -1,0 +1,5 @@
+a = 5;
+b = "cat";
+c = a + b;
+
+console.log(c);    
