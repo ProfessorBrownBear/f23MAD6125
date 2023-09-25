@@ -1,5 +1,13 @@
-a = 5;
-b = "cat";
-c = a + b;
 
-console.log(c);    
+function multiply(a, b) {
+let c = a*b;
+return c;
+}
+const answer = multiply(3,4);
+const answer2 = multiply(5,6);
+const answer3 = multiply(7,8);
+
+let things = [answer, answer2, answer3];
+for (let i = 0; i < things.length; i++) {
+  console.log(things[i]);
+}
