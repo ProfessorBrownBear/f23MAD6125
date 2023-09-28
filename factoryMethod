@@ -1,0 +1,40 @@
+Example : A javaScript function highlighting the use of arrays. 
+Make a class and make 6 objects with a loop factory method and store the created object references into the array. then loop over the array, pull out the object references out and print the values
+
+Below is a simple example of a JavaScript function that highlights the use of arrays and object. 
+This example defines a Person class and uses a loop to create six Person objects. The references to these objects are stored in an array. The program then loops over the array to print the details of each person.
+// Defining a Person class
+class Person {
+    constructor(name, age, occupation) {
+        this.name = name;
+        this.age = age;
+        this.occupation = occupation;
+    }
+    // Method to display details
+    displayDetails() {
+        console.log(`Name: ${this.name}, Age: ${this.age}, Occupation: ${this.occupation}`);
+    }
+}
+// Factory function to create Person objects
+function createPersons() {
+    const names = ['Alice', 'Bob', 'Charlie', 'Dave', 'Eve', 'Frank'];
+    const ages = [25, 30, 35, 40, 45, 50];
+    const occupations = ['Engineer', 'Doctor', 'Teacher', 'Nurse', 'Lawyer', 'Artist'];
+    let persons = [];
+
+    // Creating 6 Person objects and storing in an array
+    for (let i = 0; i < 6; i++) {
+        persons.push(new Person(names[i], ages[i], occupations[i]));
+    }
+    return persons;
+}
+// Storing the object references into the array
+let personsArray = createPersons();
+// Looping over the array, pulling the object references out and printing the values
+personsArray.forEach(person => {
+    person.displayDetails();
+});In this example:
+•	Person is a class with a constructor to initialize name, age, and occupation and a displayDetails method to print them out.
+•	createPersons is a function that creates six Person objects and stores them in an array persons.
+•	personsArray stores the returned array from createPersons.
+•	The forEach loop iterates over personsArray, and for each person object, it calls the displayDetails method to print out the details.
