@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/script.js"></script>        
+</head>
+<script>
+    function a(){
+        alert("You found me!")
+            console.log("a");
+    }
+</script>
+<body onload=a()>
+
+    <p>HELLO</p>
+
+</body>
